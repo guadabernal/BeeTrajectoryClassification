@@ -45,3 +45,7 @@ Other parameters that can be editted are:
   confidence_threshold = 50.0
   iou_threshold        =  0.1
 
+
+
+https://github.com/guadabernal/BeeTrajectoryClassification/assets/15264398/67039484-d74b-4c6f-9c69-a5c75d547f3b
+
