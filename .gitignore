@@ -1,3 +1,3 @@
 # don't include any videos
-videos_avi/*
-videos_raw/*
+videos_avi/*.avi
+videos_raw/*.h264
