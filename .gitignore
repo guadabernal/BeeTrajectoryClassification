@@ -3,5 +3,6 @@
 videos_avi/*.avi
 videos_raw/*.h264
 
-# To also remove JSON files uncomment the following line
-videos_raw/*
+# To also remove JSON files uncomment the following lines
+# videos_avi/*.json
+# videos_raw/*.json
