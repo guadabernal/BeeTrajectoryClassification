@@ -1,3 +1,7 @@
 # don't include any videos
+
 videos_avi/*.avi
 videos_raw/*.h264
+
+# To also remove JSON files uncomment the following line
+videos_raw/*
