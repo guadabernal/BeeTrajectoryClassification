@@ -5,7 +5,7 @@ import time
 from scipy.spatial.distance import cdist
 
 # Change video path
-video_path = 'videos_avi/01_2023-08-02_18-29-59.avi'
+video_path = 'videos_avi/01_2023-08-02_21-17-53.avi'
 json_seq_path = video_path.replace('.avi', '_seq.json')
 
 def calculate_distance(p1, p2):
@@ -144,11 +144,18 @@ while 0 <= id < len(enter_sequences):
                 print(s['frame'], s['boxes'])
         elif key == ord('d') and not playing:   # 's' key to save the sequence
             if video_writer is None:
-                fourcc = cv2.VideoWriter_fourcc(*'XVID')
-                # fps = cap.get(cv2.CAP_PROP_FPS)
-                fps = 5
+                # chnage framerate
+                # fps = cap.get(cv2.CAP_PROP_FPS) # live speed
+                fps = 5 
+                
+                # save as AVI
+                # fourcc = cv2.VideoWriter_fourcc(*'XVID')
+                
+                # save as MP4
+                fourcc = cv2.VideoWriter_fourcc(*'H264')
+                
                 frame_size = (frame.shape[1], frame.shape[0])
-                video_writer = cv2.VideoWriter('output.avi', fourcc, fps, frame_size)
+                video_writer = cv2.VideoWriter('output.mp4', fourcc, fps, frame_size)
             else:
                 video_writer.release()
                 video_writer = None

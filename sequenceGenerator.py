@@ -1,7 +1,7 @@
 import json
 
 # Select video json file
-json_file_path = 'videos_avi/01_2023-08-02_18-29-59.json'
+json_file_path = 'videos_avi/01_2023-08-02_21-17-53.json'
 
 def calculate_center(box):
     x_center = (box[0] + box[2]) / 2
